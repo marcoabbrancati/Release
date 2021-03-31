@@ -11,7 +11,7 @@
  * @license    http://www.horde.org/licenses/lgpl21 LGPL 2.1
  */
 namespace Horde\Release\Unit\Release;
-use Horde_Release_TestCase;
+use Horde\Release\TestCase;
 use \stdClass;
 use \Horde_Release_Whups;
 use \Horde_Http_Request_Mock;
@@ -31,7 +31,7 @@ use \Horde_Http_Client;
  * @author     Gunnar Wrobel <wrobel@pardus.de>
  * @license    http://www.horde.org/licenses/lgpl21 LGPL 2.1
  */
-class WhupsTest extends Horde_Release_TestCase
+class WhupsTest extends TestCase
 {
     public function setUp(): void
     {
@@ -60,9 +60,6 @@ class WhupsTest extends Horde_Release_TestCase
         $this->assertFalse($whups->getQueueId('missing'));
     }
 
-    /**
-     * @expectedException Horde_Exception
-     */
     public function testAddNewVersionOnMissingQueue()
     {
         $this->expectException('Horde_Exception');

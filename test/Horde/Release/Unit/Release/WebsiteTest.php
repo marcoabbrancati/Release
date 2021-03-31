@@ -12,7 +12,7 @@
  * @license    http://www.horde.org/licenses/lgpl21 LGPL 2.1
  */
 namespace Horde\Release\Unit\Release;
-use Horde_Release_TestCase;
+use Horde\Release\TestCase;
 use \PDO;
 use \Horde_Release_Website;
 use \DateTime;
@@ -26,7 +26,7 @@ use \DateTime;
  * @author     Jan Schneider <jan@pardus.de>
  * @license    http://www.horde.org/licenses/lgpl21 LGPL 2.1
  */
-class WebsiteTest extends Horde_Release_TestCase
+class WebsiteTest extends TestCase
 {
     public function setUp(): void
     {

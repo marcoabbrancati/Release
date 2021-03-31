@@ -11,7 +11,7 @@
  * @license    http://www.horde.org/licenses/lgpl21 LGPL 2.1
  */
 namespace Horde\Release\Unit\Release;
-use Horde_Release_TestCase;
+use Horde\Release\TestCase;
 use \Horde_Release_Sentinel;
 
 /**
@@ -28,7 +28,7 @@ use \Horde_Release_Sentinel;
  * @author     Gunnar Wrobel <wrobel@pardus.de>
  * @license    http://www.horde.org/licenses/lgpl21 LGPL 2.1
  */
-class SentinelTest extends Horde_Release_TestCase
+class SentinelTest extends TestCase
 {
     public function testUpdateSentinel()
     {
